@@ -1,0 +1,24 @@
+﻿<Window x:Class="StackOverflowWPFIntro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StackOverflowWPFIntro"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+  <StackPanel Background="LightGray">
+    <StackPanel Background="Pink">
+      <Label>Unlike a grid might, this took very little effort to slot in</Label>
+    </StackPanel>
+    <StackPanel Background="Aqua" Height="125">
+      <Label>nested in light gray</Label>
+      <StackPanel Background="GreenYellow" Height="45">
+        <Label>nested in aqua</Label>
+      </StackPanel>
+      <StackPanel Background="Yellow">
+        <Label>also nested in aqua</Label>
+        <Button Content="Click Me" Background="Orange" Width="100" Click="Button_Click"></Button>
+      </StackPanel>
+    </StackPanel>
+  </StackPanel>
+</Window>
